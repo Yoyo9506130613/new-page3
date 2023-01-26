@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new page</title>
+    <style>
+        /* form */
+        .form{
+            padding-bottom: 20px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .div{
+            padding-right: 30px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        
+        }
+        .body{
+            background-color: aqua;
+        }
+        .answer{
+            width: 300px;
+            height: 100px;
+            font-size: 70px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-20%,-10%);
+            color: red;
+        }
+    </style>
+<!---------------------------- IMPORTS + CONFIGURATION --------------------------->
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA4PylRdNHd9rbquXZ_ZhhBIqu4yyFenY4",
+      authDomain: "new-page-ccba3.firebaseapp.com",
+      projectId: "new-page-ccba3",
+      storageBucket: "new-page-ccba3.appspot.com",
+      messagingSenderId: "143978838161",
+      appId: "1:143978838161:web:7a602c93b0b01fb8736730"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    import {getDatabase, ref, set, child, update, remove}
+    from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js";
+
+    const db = getDatabase();
+
+/*-------------------------- References -----------------------------*/
+
+    var yourname = document.getElementById("yourname");
+    var gmail = document.getElementById("gmail");
+    var Button = document.getElementById("button");
+
+
+/*-----------------INSERT DATA FUNCTION -----------------------------*/
+
+    function InsertData(){
+        set(ref(db,"TheStudents/"+yourname.value),{
+            yourname:yourname.value,
+            gmail:gmail.value,
+        })   
+    }
+
+/*--------------------------------Assign Events To Btns --------------------------*/
+
+    Button.addEventListener('click',InsertData);
+
+    </script>
+
+    <script>
+        
+        function button(){
+            var text = document.getElementById("text");
+            var name = document.getElementById("name").value;
+            
+            if(name=="AGE02510_05L"){  // 1
+                document.getElementById("answer").innerHTML = "right";
+            } 
+
+            else if(name=="AGE02510_12L"){  // 2
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05M"){  // 3
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_12M"){  // 4
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_24M"){  // 5
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05H"){  // 6
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_12H"){  // 7 
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_24H"){  // 8
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05U"){  // 9
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_12U"){  // 10
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_24U"){  // 11
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_05L"){  // 12
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_12L"){  // 13
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_05M"){  // 14
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_12M"){  // 15
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_05H"){  // 16
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_12H"){  // 17
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_05U"){  // 18
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_12U"){  // 19
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03010_12W"){  // 20
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_05L"){  // 21
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_05M"){  // 22
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_05H"){  // 23
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_12H"){  // 24
+                document.getElementById("answer").innerHTML = "right";
+            }
+            
+            else if(name=="AGE03510_05U"){  // 25
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_12U"){  // 26
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_05V"){  // 27
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03510_12V"){  // 28
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03820_12L"){  // 29
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03820_12M"){  // 30
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03820_12H"){  // 31
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE03820_12V"){  // 32
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB03828_12L"){  // 33 
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB03828_12M"){  // 34
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB03828_12H"){  // 35
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB03828_12U"){  // 36
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB03828_12V"){  // 37
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB03828_12W"){  // 38
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE04010_05M"){  // 39
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE04010_12M"){  // 40
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE04010_05H"){  // 41
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE04010_12H"){  // 42
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE04010_12U"){  // 43
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE04010_24U"){  // 44
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_12L"){  // 45
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_24L"){  // 46
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_05M"){  // 47
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_12M"){  // 48
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_24M"){  // 49
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_12H"){  // 50
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_24H"){  // 51
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGS04020_12U"){  // 52
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_12J"){  // 53
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_12L"){  // 54
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_24L"){  // 55
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_12M"){  // 56
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_24M"){  // 57
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_12H"){  // 58
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_24H"){  // 59
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_12U"){  // 60
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04020_24U"){  // 61
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_12L"){  // 62
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_24L"){  // 63
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_12M"){  // 64
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_24M"){  // 65
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_12H"){  // 66
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_24H"){  // 67
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_12U"){  // 68
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_24U"){  // 69
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGB04028_12V"){  // 70
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGD04028_12U"){  // 71
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGD04028_12V"){  // 72
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGV04028_12H"){  // 73
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGV04028_24H"){  // 74
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGV04028_12U"){  // 75
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGV04028_24U"){  // 76
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGV04028_12V"){  // 77
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGV04028_24V"){  // 78
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_05J"){  // 79
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_12J"){  // 80
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_05L"){  // 81
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_12L"){  // 82
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_05M"){  // 83
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_12M"){  // 84
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_05H"){  // 85
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE05010_12H"){  // 86
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_05L"){  // 87
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_12L"){  // 88
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_24L"){  // 89
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_05M"){  // 90
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_12M"){  // 91
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_24M"){  // 92
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_12H"){  // 93
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06010_24H"){  // 94
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06015_12J"){  // 95
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06015_12L"){  // 96
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06015_12M"){  // 97
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06015_24M"){  // 98
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06015_12H"){  // 99
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE06015_24H"){  // 100
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 101
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 102
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 103
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 104
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 105
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 106
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 107
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 108
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 109
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 110
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 111
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 112
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 113
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 114
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 115
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 116
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 117
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 118
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 119
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 120
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 121
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 122
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 123
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 124
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 125
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 126
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 127
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 128
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 129
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 130
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 131
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 132
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 133
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 134
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 135
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 136
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 137
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 138
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 139
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 140
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 141
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 142
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 143
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 144
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 145
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 146
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 147
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 148
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 149
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 150
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 151
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 152
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 153
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 154
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 155
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 156
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 157
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 158
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 159
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 160
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 161
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 162
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 163
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 164
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 165
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 166
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 167
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 168
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 169
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 170
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 171
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 172
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 173
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 174
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 175
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 176
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 177
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 178
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 179
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 180
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 181
+                document.getElementById("answer").innerHTML = "right";
+            }
+            
+            else if(name=="AGE02510_05L"){  // 182
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 183
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 184
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 185
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 186
+                document.getElementById("answer").innerHTML = "right";
+            }
+            
+            else if(name=="AGE02510_05L"){  // 187
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 188
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 189
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 190
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 191
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 192
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 193
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 194
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 195
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 196
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 197
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 198
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 199
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 200
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 201
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 202
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 203
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 204
+                   document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 205
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 206
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 207
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 208
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 209
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 210
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 211
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 212
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 213
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 214
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 215
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 216
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 217
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 218
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 219
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 220
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 221
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 222
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 223
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 224
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 225
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 226
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 227
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 228
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 229
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 230
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 231
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 232
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 233
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 234
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 235
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 236
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 237
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 238
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 239
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 240
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 241
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 242
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 243
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 244
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 245
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 246
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 247
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 248
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 249
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 250
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 251
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 252
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 253
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 254
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 255
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 256
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 257
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 258
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 259
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 260
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 261
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 262
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 263
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 264
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 265
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 266
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 267
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 268
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 269
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 270
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 271
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 272
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 273
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 274
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 275
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 276
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 277
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 278
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 279
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 280
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 281
+                document.getElementById("answer").innerHTML = "right";
+            }
+            
+            else if(name=="AGE02510_05L"){  // 282
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 283
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 284
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 285
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 286
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 287
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 288
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 289
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 290
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 291
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 292
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 293
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 294
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 295
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 296
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 297
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 298
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 299
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 300
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 301
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 302
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 303
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 304
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 305
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 306
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 307
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 308
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 309
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 310
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 311
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 312
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 313
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 314
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 315
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 316
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 317
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 318
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 319
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 320
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 321
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 322
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 323
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 324
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 325
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 326
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 327
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 328
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 329
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 330
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 331
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 332
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 333
+              
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 334
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 335
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 336
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 337
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 338
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 339
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 340
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 341
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 342
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 343
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 344
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 345
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 346
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 347
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 348
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 349
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 350
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 351
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 352
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 353
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 354
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 355
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 356
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 357
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 358
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 359
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 360
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 361
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 362
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 363
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 364
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 365
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 366
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 367
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 368
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 369
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 370
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 371
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 372
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 373
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 374
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 375
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 376
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 377
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 378
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 379
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 380
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 381
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 382
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 383
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 384
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 385
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 386
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 387
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 388
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 389
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 390
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 391
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 392
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 393
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 394
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 395
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 396
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 397
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 398
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 399
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 400
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 401
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 402
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 403
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 404
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 405
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 406
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 407
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 408
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 409
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 410
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 411
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 412
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 413
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 414
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 415
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 416
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 417
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 418
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 419
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 420
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 421
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 422
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 423
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 424
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 425
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 426
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 427
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 428
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 429
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 430
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 431
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 432
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 433
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 434
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 435
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 436
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 437
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 438
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 439
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 440
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 441
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 442
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 443
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 444
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 445
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 446
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 447
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 448
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 449
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 450
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 451
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 452
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 453
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 454
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 455
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 456
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 457
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 458
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 459
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 460
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 461
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 462
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 463
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 464
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 465
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 466
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 467
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 468
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 469
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 470
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 471
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 472
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 473
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 474
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 475
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 476
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 477
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 478
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 479
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 480
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 481
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 482
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 483
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 484
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 485
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 486
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 487
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 488
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 489
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 490
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 491
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 492
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 493
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 494
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 495
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 496
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 497
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 498
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 499
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 500
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 501
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 502
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else if(name=="AGE02510_05L"){  // 503
+                document.getElementById("answer").innerHTML = "right";
+            }
+
+            else{
+                var wrong=document.getElementById("answer").innerHTML = "wrong";
+                
+            }
+        }
+        
+        function over(elem){
+            elem.style.background="#ddaaaa";
+        }
+        function out(elem){
+            elem.style.background="red";
+        }
+    </script>
+</head>
+<body class="body">
+    <img src="crown.png" width="150px" height="100"/>
+    <div class="form">
+        <div class="div" style="padding-right: 30px;">NAME</div>
+        <input type="text" id="yourname"/>
+    </div>
+    <div class="form">
+        <div class="div" style="padding-right :15px;">GMAIL</div>
+        <input type="text" id="gmail"/>
+    </div>
+    <div class="form" id="text">
+        <div class="div" style="padding-right: 40px;">CODE</div>
+        <input type="text" id="name"/>
+    </div>
+    <div class="button">
+        <button style="height: 100px; 
+        width: 300px; 
+        font-size: 50px; 
+        background-color: red;
+        cursor: pointer;"
+        onclick="button()"
+        onmouseover="over(this);"
+        onmouseout="out(this);"
+        id="button">enter</button>
+    </div>
+    <div class="answer" id="answer"></div>
+</body>
+</html>

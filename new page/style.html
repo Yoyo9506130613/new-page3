@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="form1">
+5+10= <input name="name" type="text" size="3"> <button type="button" onclick="outputname()">Check</button>
+</form>
+
+<script>
+
+function outputname() {
+var x,y,name,a,b,answer;
+x=document.getElementById("form1") ;
+y=x.elements["name"].value;
+if (y==15) {
+document.getElementById("demo").innerHTML="Your answer is correct";
+} else {
+document.getElementById("demo").innerHTML="Your answer is wrong";
+}
+}
+
+</script>
+
+
+<p id="demo"></p>
+</body>
+</html>
